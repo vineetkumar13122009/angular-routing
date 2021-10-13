@@ -11,7 +11,7 @@
                 <p style="color: lightslategray; text-align: center;">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login
                     details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                <form>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
                         <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
                             name="email" />
